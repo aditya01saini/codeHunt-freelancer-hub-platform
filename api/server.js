@@ -62,7 +62,3 @@ app.listen(PORT, () => {
   connect();
   console.log("Backend running on " + PORT);
 });
-app.listen(8800, () => {
-  connect();
-  console.log("Backend Server is running at 8800 ");
-});
