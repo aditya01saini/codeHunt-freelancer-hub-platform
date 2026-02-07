@@ -30,12 +30,18 @@ const connect = async () => {
 app.use(
   cors({
     origin: [
-      // "http://localhost:5173",
-      "https://code-hunt-freelancer-hub-platform.vercel.app/",
+      "https://code-hunt-freelancer-hub-platform.vercel.app",
+      "https://code-hunt-freelancer-hub-platform-s.vercel.app",
+      "https://code-hunt-freelancer-hub-platform-l.vercel.app",
+      "http://localhost:5173"
     ],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
-  }),
+  })
 );
+
+app.options("*", cors());
+
 // we are sending cookies from frontend to backend so credential true is needed
 
 app.use(express.json());
