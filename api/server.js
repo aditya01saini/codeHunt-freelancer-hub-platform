@@ -31,7 +31,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://code-hunt-freelancer-hub-platform-l8mu-n8qbcthra.vercel.app/",
+      "https://code-hunt-freelancer-hub-platform-l8mu-n8qbcthra.vercel.app",
     ],
     credentials: true,
   }),
@@ -56,7 +56,12 @@ app.use((err, req, res, next) => {
 
   return res.status(errorStatus).send(errMessage);
 });
+const PORT = process.env.PORT || 8800;
 
+app.listen(PORT, () => {
+  connect();
+  console.log("Backend running on " + PORT);
+});
 app.listen(8800, () => {
   connect();
   console.log("Backend Server is running at 8800 ");
