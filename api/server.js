@@ -29,7 +29,7 @@ const connect = async () =>{
 };
 
 // 2- after writing login axios concept in Login.jsx =>to connect frontend server to backend use this and before use instal yarn add cors in api section 
-app.use(cors({origin:"http://localhost:5173", credentials:true}));
+app.use(cors({origin:["http://localhost:5173", "code-hunt-freelancer-hub-platform-l8mu-n8qbcthra.vercel.app"], credentials:true}));
 // we are sending cookies from frontend to backend so credential true is needed
 
 app.use(express.json());
