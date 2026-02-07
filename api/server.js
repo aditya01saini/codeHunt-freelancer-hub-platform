@@ -30,7 +30,7 @@ const connect = async () => {
 app.use(
   cors({
     origin: [
-      "http://localhost:5173",
+      // "http://localhost:5173",
       "https://code-hunt-freelancer-hub-platform-l8mu-n8qbcthra.vercel.app",
     ],
     credentials: true,
