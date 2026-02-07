@@ -31,7 +31,7 @@ app.use(
   cors({
     origin: [
       // "http://localhost:5173",
-      "https://code-hunt-freelancer-hub-platform-l8mu-n8qbcthra.vercel.app",
+      "https://code-hunt-freelancer-hub-platform.vercel.app/",
     ],
     credentials: true,
   }),
