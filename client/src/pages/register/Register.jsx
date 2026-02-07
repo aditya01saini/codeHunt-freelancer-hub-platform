@@ -55,14 +55,14 @@ const Register = () => {
           <input
             name="username"
             type="text"
-            placeholder="arvindk25"
+            placeholder="Enter your username"
             onChange={handleChange}
           />
           <label htmlFor="">Email</label>
           <input
             name="email"
             type="email"
-            placeholder="arvindnisha2002@gmail.com"
+            placeholder="Enter your email "
             onChange={handleChange}
           />
           <label htmlFor="">Password</label>
@@ -91,7 +91,7 @@ const Register = () => {
           <input
             name="phone"
             type="text"
-            placeholder="+91-9695271037"
+            placeholder="+91-"
             onChange={handleChange}
           />
           <label htmlFor="">Description</label>

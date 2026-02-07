@@ -73,7 +73,7 @@ const Footer = () => {
         <div className="bottom">
           <div className="left">
             <h2>CodeHunt</h2>
-            <span>Made with ❤️ Arvind © 2023 || CodeHunt</span>
+            <span>Made with ❤️ Aditya © 2026 || CodeHunt</span>
           </div>
           <div className="right">
             <div className="social">
